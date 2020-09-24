@@ -1,0 +1,119 @@
+<html ng-app="myApp">
+
+    <head>
+        <!-- <meta charset="UTF-8">
+        <title>Register</title>
+        <meta name="description" content="Login - Register Template">
+        <meta name="author" content="Lorenzo Angelino aka MrLolok">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  -->
+
+    </head>
+
+    <body class = "image">
+        
+        <br>
+        <br>
+        <br>
+        <br>
+  
+
+    <h2 style ="text-align: center; margin-top: -15px;"><b>පියවර 1 - ගණිතය (1 ශ්‍රේණිය) - මුදල්</b></h2>
+
+    <!-- first page -->
+    <div class = "center" id="Page1" data-value="0"> 
+        <h1 style="margin-top: 2em; margin-left: 300px; margin-bottom: 50px;">හඳුන්වාදීමේ වීඩියෝව</h1>          
+        <a href="#" style="margin-left:400px;" class="button1" onclick="return show('Page2','Page1','Page3');">සෙල්ලම් කරන්න</a>
+    </div>
+
+    <!-- second page-->
+        <div class="canvas" id="Page2" ng-controller="myCtrl" style="display:none" data-value="1">
+            <form name="f1" style="width: 50%;">
+                <div id="box" style="float:left; width:50%;" ng-controller="myCtrl">
+                    <img id="button" name="cupcake" src="assets/images/cupcake-50.png" onclick="testWrong();" hspace="10">
+                    <img id="button" name="toffee" src="assets/images/toffee-5.png" onclick="testRight();" hspace="10">  
+                </div>
+
+                <div id="box2" style="position:absolute; top:215; left:20; width:400; height:80">
+                    <br>
+                    <img name="clip1" src="assets/images/line.gif" style="width: 20em;">
+                    <img name="clip2" src="assets/images/blank.png" hspace="100"> 
+                </div>
+            </form>
+
+            <form name="f2" style="width: 50%;">
+                <div id="box" style="float:left; width:50%;" ng-controller="myCtrl">
+                    <img id="button" name="toffee" src="assets/images/ice-cream-20.PNG" onclick="testWrong();" hspace="10">  
+                    <img id="button" name="toffee" src="assets/images/lollipop-10.png" onclick="testWrong();" hspace="42">            
+                </div> 
+
+                <div id="box2" style="position:absolute; top:215; left:20; width:400; height:80">
+                    <br>
+                    <img name="clip1" src="assets/images/line.gif" style="width: 20em;">
+                    <img name="clip2" src="assets/images/blank.png" hspace="100"> 
+                </div>
+
+                <!-- question audio -->
+            <img src = "/assets/images/shape_sound2.gif" id="question-circle" style="position: absolute; z-index:2;height:140px; margin-top: 1em; margin-left:600px">
+            <audio id="quest_audio1" src="assets/audio/coins-game.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+            <img src = "/assets/images/click.gif" style="position: absolute; z-index:2;height:60px; margin-top: 3.5em; margin-left:500px">
+
+            </form>
+                <div id="box" style="float:left; width:50%;" ng-controller="myCtrl">
+                    <h2 style="margin-top: -13.5em; margin-left: 850px;z-index: 2">සවන් දෙන්න <span style="font-weight: bold;">"වෘත්තය"</span></h2>
+
+                    <!-- <button type="button">Click to play
+                        <audio controls>
+                        <source src="assets/audio/coins-game.mp3" type="audio/mp3" style="position: relative;">
+                        </audio>
+                    </button> -->
+                </div>
+        
+
+            <div style="float:right; width:50%;" ng-app ng:controller="ShowHideController">
+                <!-- <div id="box" style="float:left;" ng-controller="myCtrl">
+                    <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;" hspace="5"> 
+                </div> -->
+                <br>
+                <div id="box" style="float:right;" ng-controller="myCtrl">
+                    <img id="loadingImage3" src="assets/images/5.png" style="display:none; height: 90px; width: auto; "/>
+                    <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage3()">Click to view coin</a>
+                    <a href="#"  class="btn btn-info" onclick="return show('Page3','Page2');">Next</a>
+                </div>
+            </div>
+        </div>
+        
+
+
+<!-- third page-->
+        <div class="canvas"  id="Page3" style="display:none"  ng-controller="myCtrl">
+            <div style="float:left;">  
+                <img class="sweet-image" src="assets/images/cupcake-50.png">
+                <img class="sweet-image" src="assets/images/toffee-5.png">
+                <br>
+                <img class="sweet-image" src="assets/images/ice-cream-20.PNG">
+                <img class="sweet-image" src="assets/images/lollipop-10.png">
+                <br>
+                <button type="button">Click to play
+                    <audio controls>
+                    <source src="assets/audio/coins-game.mp3" type="audio/mp3" style="position: relative;">
+                    </audio>
+                </button>
+            </div>
+
+            <!-- <div style="float:right;" ng-app ng:controller="ShowHideController"> -->
+                <!-- <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;"> 
+                <br> -->
+                
+                <img id="loadingImage2" src="assets/images/10.png" style="display:none; height: 90px; width: auto; "/>
+                <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage2()">Click to view coin</a>
+                <a href="#"  class="btn btn-info" onclick="return show('Page2','Page3');">Back</a>
+            <!-- </div> -->
+
+        </div>
+
+    </body>
+</html>

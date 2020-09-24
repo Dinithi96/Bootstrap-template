@@ -1,0 +1,25 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 15 Sep 2020 22:03:36 at http://fvdthemes.com/html/yeahkids/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F  -%F  -%l "en, *" http://fvdthemes.com/html/yeahkids/ -O1 "C:\Drive D\Download website" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:06:21	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/img/favicon/apple-touch-icon.png (from fvdthemes.com/html/yeahkids/)
+22:06:21	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/img/favicon/apple-touch-icon-72x72.png (from fvdthemes.com/html/yeahkids/)
+22:06:21	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/img/favicon/apple-touch-icon-114x114.png (from fvdthemes.com/html/yeahkids/)
+22:13:27	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/css/fonts/glyphicons-halflings-regular.eot (from fvdthemes.com/html/yeahkids/css/bootstrap/bootstrap.min.css)
+22:13:27	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/css/fonts/glyphicons-halflings-regular.eot? (from fvdthemes.com/html/yeahkids/css/bootstrap/bootstrap.min.css)
+22:13:27	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/css/fonts/glyphicons-halflings-regular.woff2 (from fvdthemes.com/html/yeahkids/css/bootstrap/bootstrap.min.css)
+22:13:27	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/css/fonts/glyphicons-halflings-regular.woff (from fvdthemes.com/html/yeahkids/css/bootstrap/bootstrap.min.css)
+22:13:27	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/css/fonts/glyphicons-halflings-regular.ttf (from fvdthemes.com/html/yeahkids/css/bootstrap/bootstrap.min.css)
+22:13:27	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/css/fonts/glyphicons-halflings-regular.svg (from fvdthemes.com/html/yeahkids/css/bootstrap/bootstrap.min.css)
+22:15:17	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/img/teacher/certificate_full_1.jpg (from fvdthemes.com/html/yeahkids/teacher.html)
+22:15:17	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/Popover requires tooltip.js (from fvdthemes.com/html/yeahkids/js/bootstrap/bootstrap.js)
+22:15:18	Warning: 	File not parsed, looks like binary: fvdthemes.com/html/yeahkids/css/slider-pro-master/images/openhand.cur
+22:15:18	Warning: 	File not parsed, looks like binary: fvdthemes.com/html/yeahkids/css/slider-pro-master/images/closedhand.cur
+22:15:18	Error: 	"Not Found" (404) at link fvdthemes.com/html/yeahkids/css/owl.carousel/owl.video.play.png (from fvdthemes.com/html/yeahkids/css/owl.carousel/owl.carousel.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 11 minutes 42 seconds : 304 links scanned, 291 files written (19179373 bytes overall) [17202559 bytes received at 24505 bytes/sec], 2687692 bytes transferred using HTTP compression in 72 files, ratio 22%, 15.2 requests per connection
+(12 errors, 2 warnings, 0 messages)
